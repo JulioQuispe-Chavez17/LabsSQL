@@ -28,7 +28,7 @@ WHERE department_id IN (20,50)
 ORDER BY department_id ASC;
 
 SELECT last_name, department_id FROM HR.employees
-WHERE department_id = 5 OR department_id = 10
+WHERE department_id = 20 OR department_id = 50
 ORDER BY department_id ASC;
 
 --LAB_03_06
@@ -38,7 +38,7 @@ SELECT last_name as Employee,salary as Monthly_Salary  FROM HR.employees
 WHERE salary BETWEEN 5000 AND 12000 AND department_id IN (20,50);
 
 --LAB_03_07
-/*El departamento de recursos humanos necesita un informe que muestre el apellido y la fecha de contratación de todos los empleados contratados durante el año 1994.*/
+/*El departamento de recursos humanos necesita un informe que muestre el apellido y la fecha de contratación de todos los empleados contratados durante el año 2006.*/
 SELECT last_name,hire_date FROM HR.employees
 WHERE hire_date LIKE '%06';
 
